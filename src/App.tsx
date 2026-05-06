@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 
 // ─── THEME ────────────────────────────────────────────────────────────────────
-const G = "#C9A84C", GL = "#E8C97A", GD = "#8B6914";
+const G = "#C9A84C", _GL = "#E8C97A", GD = "#8B6914";
 const D0 = "#0A0A0A", D1 = "#101010", D2 = "#141414", D3 = "#1A1A1A", D4 = "#222";
 const BR = "rgba(201,168,76,0.15)";
 const TM = "#888", TD = "#444";
@@ -343,7 +343,7 @@ function Onboarding({ onComplete }) {
   const [plan, setPlan] = useState(""); const [err, setErr] = useState("");
   const TOTAL = 6;
 
-  const toggle = (arr, set, v) => set((p) => p.includes(v) ? p.filter((x) => x !== v) : [...p, v]);
+  const toggle = (_arr, set, v) => set((p) => p.includes(v) ? p.filter((x) => x !== v) : [...p, v]);
 
   function next() {
     setErr("");
