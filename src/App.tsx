@@ -82,6 +82,7 @@ const nowDate = () => new Date().toLocaleDateString("en-GB", { day: "2-digit", m
 // ─── SHARED UI ────────────────────────────────────────────────────────────────
 const css = `
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap');
+#root{width:100%!important;max-width:100%!important;margin:0!important;border:none!important}
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{height:100%;background:#0A0A0A;color:#E8E8E0;font-family:'Inter',sans-serif;font-size:14px;line-height:1.6}
 ::-webkit-scrollbar{width:4px}::-webkit-scrollbar-track{background:#101010}::-webkit-scrollbar-thumb{background:#8B6914;border-radius:2px}
