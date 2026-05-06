@@ -702,7 +702,7 @@ function ClientApp({ user, searches, setSearches, onLogout, notify, onSendMessag
 
       {/* SUPPORT */}
       {page === "support" && (
-        <div style={{ maxWidth: 700, margin: "0 auto", padding: "50px 24px" }}>
+        <div style={{ maxWidth: 1100, margin: "0 auto", padding: "50px 24px" }}>
           <Badge label="Support" /><h2 className="serif" style={{ fontSize: 32, color: "#F2EFE4", margin: "14px 0 6px" }}>We're here to help</h2>
           <p style={{ color: TM, marginBottom: 40, fontSize: 13 }}>Browse our FAQ or chat with our AI concierge.</p>
           <div style={{ marginBottom: 44 }}>
