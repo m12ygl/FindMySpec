@@ -219,7 +219,7 @@ function MessageThread({ search, userId, isAdmin, onSend }) {
 // ─── LANDING ──────────────────────────────────────────────────────────────────
 function Landing({ onLogin, onSignup }) {
   return (
-    <div style={{ background: D0, minHeight: "100vh" }}>
+    <div style={{ background: D0, minHeight: "100vh", width: "100%" }}>
       <nav style={{ position: "sticky", top: 0, zIndex: 100, background: "rgba(10,10,10,.96)", backdropFilter: "blur(14px)", borderBottom: `1px solid ${BR}`, padding: "0 28px", height: 58, display: "flex", alignItems: "center", justifyContent: "space-between" }}>
         <span className="serif" style={{ fontSize: 22, color: G, fontWeight: 600 }}>FindMySpec</span>
         <div style={{ display: "flex", gap: 10, alignItems: "center" }}>
@@ -702,7 +702,7 @@ function ClientApp({ user, searches, setSearches, onLogout, notify, onSendMessag
 
       {/* SUPPORT */}
       {page === "support" && (
-        <div style={{ maxWidth: 1100, margin: "0 auto", padding: "50px 24px" }}>
+        <div style={{ maxWidth: 1200, width: "100%", margin: "0 auto", padding: "50px 24px" }}>
           <Badge label="Support" /><h2 className="serif" style={{ fontSize: 32, color: "#F2EFE4", margin: "14px 0 6px" }}>We're here to help</h2>
           <p style={{ color: TM, marginBottom: 40, fontSize: 13 }}>Browse our FAQ or chat with our AI concierge.</p>
           <div style={{ marginBottom: 44 }}>
