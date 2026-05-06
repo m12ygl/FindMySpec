@@ -1033,7 +1033,7 @@ export default function App() {
   const sendMessage = (searchId, message) => setSearches((p) => p.map((s) => s.id === searchId ? { ...s, messages: [...(s.messages || []), message] } : s));
 
   return (
-    <div>
+    <div style={{ width: "100%", minHeight: "100vh" }}>
       <style>{css}</style>
       {toast && <Toast msg={toast} onDone={() => setToast(null)} />}
       {screen === "landing"    && <Landing onLogin={() => setScreen("login")} onSignup={() => setScreen("onboarding")} />}
