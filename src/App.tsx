@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef } from "react";
 
 // ─── THEME ────────────────────────────────────────────────────────────────────
-const G = "#C9A84C", _GL = "#E8C97A", GD = "#8B6914";
-const D0 = "#0A0A0A", D1 = "#101010", D2 = "#141414", D3 = "#1A1A1A", D4 = "#222";
+const G = "#C9A84C", GD = "#8B6914"
+;const D0 = "#0A0A0A", D1 = "#101010", D2 = "#141414", D3 = "#1A1A1A", D4 = "#222";
 const BR = "rgba(201,168,76,0.15)";
 const TM = "#888", TD = "#444";
 
@@ -633,7 +633,7 @@ function ClientApp({ user, searches, setSearches, onLogout, notify, onSendMessag
                     {s.cars.length === 0
                       ? <p style={{ fontSize: 13, color: TM, textAlign: "center", padding: "14px 0" }}>Our team is actively sourcing matches. You'll hear from us within 24–72 hours.</p>
                       : <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill,minmax(190px,1fr))", gap: 12 }}>
-                        {s.cars.map((car) => <CarCard key={car.id} car={car} />)}
+                        {s.cars.map((car) => <CarCard key={car.id} car={car} onRemove={() => {}} />)}
                       </div>}
                   </div>
                 )}
